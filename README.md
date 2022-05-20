@@ -19,4 +19,5 @@ II/ Hướng dẫn sử dụng:
 Tài khoản: long62k@gmail.com   
 Mật khẩu: 123456
 2. Có thắc mắc xin liên hệ với nhóm trưởng nhóm 2 - Tô Nguyễn Hoàng Anh :D
+3. Code được phát triển trên 1 project có sẵn trên mạng
 # reubennguyen224.github.io
