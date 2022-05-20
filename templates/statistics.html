@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- ========================= SECTION CONTENT ========================= -->
+<section class="section-conten padding-y bg">
+    <div class="container">
+        {% include "includes/alerts.html" %}
+        <div class="row">
+            <main class="col-md-9">
+                <article class="card">
+                    <header class="card-header">
+                        <strong class="d-inline-block mr-3">Bảng thống kê</strong>
+                    </header>
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <tr>
+                                <th>Sản phẩm</th>
+                                <th>Đã bán</th>
+                                <th>Tổng số tiền thu được</th>
+                            </tr>
+                            {% for product in products %}
+                            <tr>
+                                <th>{{product.product_name}}</th>
+                                <th>{{product.buy}}</th>
+                                <th>{{product.totalpriceget}} đ</th>
+                            </tr>
+                            {% endfor %}
+                            <tr>
+                                <th>Tổng cộng</th>
+                                <th></th>
+                                <th>{{total}}</th>
+                            </tr>    
+                        </table>
+                    </div> <!-- table-responsive .end// -->
+                </article> <!-- order-group.// -->
+            </main>
+        </div> <!-- row.// -->
+    </div>
+
+
+</section>
+<!-- ========================= SECTION CONTENT END// ========================= -->
+{% endblock %}
